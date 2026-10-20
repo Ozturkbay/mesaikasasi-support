@@ -67,13 +67,15 @@ python3 -m http.server 8000
 
 ## Keeping it in sync with the app
 
-- The privacy pages show their date: `Son güncelleme: 19 Ekim 2026` and
-  `Last updated: October 19, 2026`. Edit both together.
+- The privacy pages show their date: `Son güncelleme: 20 Ekim 2026` and
+  `Last updated: October 20, 2026`. Edit both together.
 - The policy describes the app as it works today:
   - free download, with a one-time non-consumable "Tam Sürüm" purchase and no
     subscription
-  - no account, ads, analytics, tracking, server or network requests apart
-    from StoreKit
+  - no account, analytics or server
+  - since 2026-10-20: Google AdMob ads in the free version, at task boundaries
+    only, with Google UMP consent first and then the ATT prompt. Tam Sürüm
+    removes all ads. Logged data is never given to the ad SDK.
   - logged days, salary and settings stored only on the device
   - a widget summary shared through the app's own app group
   - an optional local reminder
