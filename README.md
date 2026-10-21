@@ -6,7 +6,7 @@ and Support URL that App Store Connect requires. **Turkish is the primary
 language** and lives at the site root; English lives under `/en/`.
 
 - **Developer:** Fatih Öztürkbay
-- **Support email:** `APP_SUPPORT_EMAIL` (placeholder; see below)
+- **Support email:** `feesheet.support@icloud.com` (placeholder; see below)
 
 It is a plain static site: HTML and one CSS file. There is no framework, build
 step or JavaScript, and it loads no external fonts, scripts or stylesheets.
@@ -35,13 +35,13 @@ each page's `<head>`.
 
 ## Before publishing: set the support email
 
-Every address on the site is the literal placeholder `APP_SUPPORT_EMAIL`.
+Every address on the site is the literal placeholder `feesheet.support@icloud.com`.
 Replace it, then confirm that none remain:
 
 ```sh
-grep -rl APP_SUPPORT_EMAIL --include='*.html' . \
-  | xargs sed -i '' 's/APP_SUPPORT_EMAIL/you@example.com/g'
-grep -rn APP_SUPPORT_EMAIL --include='*.html' .
+grep -rl feesheet.support@icloud.com --include='*.html' . \
+  | xargs sed -i '' 's/feesheet.support@icloud.com/you@example.com/g'
+grep -rn feesheet.support@icloud.com --include='*.html' .
 ```
 
 ## Publish on GitHub Pages
